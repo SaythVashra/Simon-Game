@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Simon</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <script src="jQuery/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+</head>
+
+<body>
+<h1 class="title-size-lg title-margin-lg" id="level-title">Simon Game</h1>
+<div class="container">
+
+    <!--Main Menu Section-->
+
+    <button class="menu-item" id="start-game-btn">Start Game</button>
+    <button class="menu-item" id="how-to-play-btn">How to Play</button>
+
+    <!--How to Play Section-->
+
+    <p class="hidden" id="game-description">The game randomly illuminates the colored quadrants, and as each quadrant
+        lights up, it emits its own sound. After waiting, the user must enter the sequence shown in the correct order,
+        using his visual and sound memory.</p>
+
+    <!--Select Number of Players Section-->
+
+    <button class="player-btn menu-item hidden" id="1p-btn">1p</button>
+    <button class="player-btn menu-item hidden" id="2p-btn">2p</button>
+    <button class="player-btn menu-item hidden" id="3p-btn">3p</button>
+    <button class="player-btn menu-item hidden" id="4p-btn">4p</button>
+
+    <!--Players name input Section-->
+
+    <div class="form hidden">
+
+        <div id="text-box-container">
+            <input type="text" maxlength="15" id="player-name-textbox">
+        </div>
+
+        <div type="button" id="submit-player-name-btn">
+            <i class="fa fa-lg fa-arrow-right"></i>
+        </div>
+
+    </div>
+
+    <!--Ready Button-->
+
+    <button class="menu-item hidden" id="ready-btn">Ready!!</button>
+
+    <!--Back Buttons-->
+
+    <button class="menu-item hidden" id="back-to-main-menu-btn">Back</button>
+    <button class="menu-item hidden" id="back-to-previous-player-btn">Back</button>
+
+    <!--Players Score Section-->
+
+    <div class="results-bottom-left hidden" id="results-container">
+
+        <div class="results-col hidden" id="players-container">
+
+            <h3 class="results-header" id="players-name-header">Player</h3>
+
+            <div id="players-names-container">
+                <p class="player-name-text" id="p1-name-text"></p>
+                <p class="player-name-text" id="p2-name-text"></p>
+                <p class="player-name-text" id="p3-name-text"></p>
+                <p class="player-name-text" id="p4-name-text"></p>
+            </div>
+        </div>
+
+        <div class="results-col hidden" id="scores-container">
+
+            <h3 class="results-header" id="players-score-header">Score</h3>
+
+            <div id="players-scores-container">
+                <p class="player-score-text" id="p1-score-text"></p>
+                <p class="player-score-text" id="p2-score-text"></p>
+                <p class="player-score-text" id="p3-score-text"></p>
+                <p class="player-score-text" id="p4-score-text"></p>
+            </div>
+        </div>
+
+        <div class="results-col hidden" id="streaks-container">
+
+            <h3 class="results-header" id="players-best-streak-header">Streak</h3>
+
+            <div id="players-best-streak-container">
+                <p class="player-streak-text" id="p1-streak-text"></p>
+                <p class="player-streak-text" id="p2-streak-text"></p>
+                <p class="player-streak-text" id="p3-streak-text"></p>
+                <p class="player-streak-text" id="p4-streak-text"></p>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!--Game Buttons Section-->
+
+    <div class="row">
+
+        <div type="button" id="green" class="btn green hidden"></div>
+        <div type="button" id="red" class="btn red hidden"></div>
+
+    </div>
+
+    <div class="row">
+
+        <div type="button" id="yellow" class="btn yellow hidden"></div>
+        <div type="button" id="blue" class="btn blue hidden"></div>
+
+        <button class="volume-button"><i class="fa fa-volume-up"></i></button>
+
+    </div>
+
+    <!--Game Buttons Section-->
+
+    <button class="menu-item hidden" id="play-again-btn">Play Again</button>
+    <button class="menu-item quit-game-btn-top-left hidden" id="quit-game-btn">Main Menu</button>
+
+</div>
+
+<script src="js/pageFunctioning.js"></script>
+<script src="js/gameLogic.js"></script>
+</body>
+
+</html>

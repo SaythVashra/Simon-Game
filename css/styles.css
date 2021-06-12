@@ -1,0 +1,264 @@
+body {
+    text-align: center;
+    background-color: #011F3F;
+}
+
+/*********************MENU SECTION*********************/
+
+h1, h3, p, .menu-item, #game-description {
+    font-family: 'Press Start 2P', cursive;
+    color: #FEF2BF;
+}
+
+#level-title {
+    text-align: center;
+  width: 90%;
+}
+
+.title-size-lg{
+   font-size: 5rem;
+ }
+
+.title-size-md{
+  font-size: 3rem;
+}
+
+.title-margin-lg{
+  margin: 100px auto 150px;
+}
+
+.title-margin-md{
+  margin: 80px auto 50px;
+}
+
+.container {
+    display: block;
+    width: 50%;
+    margin: auto;
+}
+
+.menu-item {
+    background-color: transparent;
+    border: none;
+    margin: 50px auto;
+    display: block;
+    font-size: 2rem;
+    transition: 0.2s;
+}
+
+.quit-game-btn-top-left{
+    margin: 0;
+    font-size: 1.5rem;
+    position: fixed;
+    top: 30px;
+    left: 30px;
+}
+
+.quit-game-btn-center{
+    position: static;
+}
+
+
+.menu-item:hover {
+    color: #e6c97a;
+}
+
+#game-description {
+    color: #FEF2BF;
+}
+
+.player-btn {
+    display: inline-block;
+    margin: 5% 5%;
+}
+
+.form {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+#text-box-container {
+    flex: 80%;
+}
+
+#player-name-textbox {
+    height: 40px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 2rem;
+    padding: 20px;
+    color: #FEF2BF;
+    background-color: transparent;
+    border: solid 10px #FEF2BF;
+    margin: 2% auto;
+    width: 90%;
+}
+
+#submit-player-name-btn {
+    flex: 20%;
+    height: 40px;
+    width: 20%;
+    background-color: transparent;
+    padding: 20px;
+    font-size: 2rem;
+    color: #FEF2BF;
+    border: solid 10px #FEF2BF;
+    margin: 2% 2%;
+    transition: 0.2s;
+}
+
+#submit-player-name-btn:hover {
+    color: slategrey;
+    background-color: #FEF2BF;
+}
+
+/*********************GAME SECTION*********************/
+
+.btn {
+    margin: 25px;
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+    border: 10px solid black;
+    border-radius: 20%;
+    transition: 0.1s;
+}
+
+.btn:hover {
+    height: 250px;
+    width: 250px;
+    margin: 0;
+}
+
+.correct-answer{
+    background-color: forestgreen;
+    opacity: 0.8;
+}
+
+.wrong-answer {
+    background-color: red;
+    opacity: 0.8;
+}
+
+.red {
+    background-color: red;
+}
+
+.red:hover {
+    border-color: red;
+}
+
+.green {
+    background-color: green;
+}
+
+.green:hover {
+    border-color: green;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.blue:hover {
+    border-color: blue;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.yellow:hover {
+    border-color: yellow;
+}
+
+/*********************PLAYERS SCORE SECTION*********************/
+
+#results-container {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 400px;
+}
+
+.results-bottom-left{
+    position: fixed;
+    justify-content: flex-start;
+    bottom: 30px;
+    left: 30px;
+}
+
+.results-center{
+    justify-content: center;
+    margin: auto;
+    position: static;
+}
+
+.results-col{
+    padding: 30px;
+}
+
+/*Names Column*/
+
+#players-name-header{
+    text-align: left;
+}
+
+#players-names-container {
+    text-align: left;
+    margin: auto;
+}
+
+/*Scores Column*/
+
+#players-score-header{
+    text-align: right;
+}
+
+#players-scores-container {
+    text-align: right;
+    margin: auto;
+}
+
+/*Streaks Column*/
+
+#players-best-streak-header{
+    text-align: right;
+}
+
+#players-best-streak-container {
+    text-align: right;
+    margin: auto;
+}
+
+
+/*********************OTHER*********************/
+
+.pressed {
+    box-shadow: 0 0 20px white;
+    background-color: white;
+    border-color: white;
+}
+
+.hidden {
+    display: none;
+}
+
+.volume-button {
+    background-color: transparent;
+    border: none;
+    margin: auto;
+    position: fixed;
+    margin: 0;
+    bottom: 5%;
+    right: 5%;
+    font-size: 7rem;
+    color: #FEF2BF;
+    transition: 0.2s;
+}
+
+.volume-button:hover {
+    color: #e6d091;
+}
+
+
